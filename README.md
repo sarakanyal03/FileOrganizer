@@ -61,3 +61,35 @@ FileOrganizer/
 │ ├── .organizer.log
 └── .git/ # Git tracking folder
   
+
+---
+
+## 💻 Usage Instructions
+
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/sarakanyal/FileOrganizer.git
+cd FileOrganizer
+```
+
+### Step 2: Make the script executable
+```
+chmod +x organizer.sh
+```
+
+###Step 3: Run in Dry-Run Mode (Preview Changes)
+```
+./organizer.sh --dir "./test_files" --dryrun
+```
+
+### Step 4: Run for Actual File Organization
+```
+./organizer.sh --dir "./test_files"
+```
+
+### Step 5: Undo Last Operation
+```
+./organizer.sh --dir "./test_files" --undo 2
+```
+
+
