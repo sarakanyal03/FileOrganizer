@@ -115,10 +115,10 @@ Actual Run
 ### Logging and Undo Mechanism
 
 All file movements are recorded in .organizer.log with:
--Timestamp
--Source and destination paths
--File checksum (for verification)
--Undo reads from this log and moves files back to their original locations.
+- Timestamp
+- Source and destination paths
+- File checksum (for verification)
+- Undo reads from this log and moves files back to their original locations.
 
 
 ### Git Commands Used 
@@ -134,11 +134,11 @@ All file movements are recorded in .organizer.log with:
 
 ### Testing & Results
 
--Tested the script with various file types.
--Verified correct creation of categorized folders.
--Confirmed .organizer.log entries for every movement.
--Verified undo function restored files properly.
--Confirmed dry-run mode works safely without moving files.
+- Tested the script with various file types.
+- Verified correct creation of categorized folders.
+- Confirmed .organizer.log entries for every movement.
+- Verified undo function restored files properly.
+- Confirmed dry-run mode works safely without moving files.
 
 
 ### Conclusion
