@@ -1,0 +1,4 @@
+2025-10-06T09:25:34Z | MOVE | ./test_files/image.jpg -> ./test_files/Images/image.jpg | checksum: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2025-10-06T09:25:34Z | MOVE | ./test_files/notes.txt -> ./test_files/Documents/notes.txt | checksum: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2025-10-06T09:25:34Z | MOVE | ./test_files/report.pdf -> ./test_files/Documents/report.pdf | checksum: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2025-10-06T09:25:35Z | MOVE | ./test_files/song.mp3 -> ./test_files/Audio/song.mp3 | checksum: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
