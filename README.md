@@ -98,3 +98,12 @@ Dryrun
 Actual Run
 ![Actual Run](https://github.com/sarakanyal03/FileOrganizer/blob/main/actualrun.png)
 
+| File Type | Folder Name  | Extensions                          |
+| --------- | ------------ | ----------------------------------- |
+| Images    | `Images/`    | jpg, jpeg, png, gif                 |
+| Audio     | `Audio/`     | mp3, wav, ogg                       |
+| Videos    | `Videos/`    | mp4, mkv, avi, mov                  |
+| Documents | `Documents/` | pdf, txt, doc, docx, xls, ppt       |
+| Archives  | `Archives/`  | zip, rar, tar, gz, 7z               |
+| Code      | `Code/`      | py, c, cpp, java, js, html, css, sh |
+| Others    | `Others/`    | Uncategorized files                 |
