@@ -50,13 +50,29 @@ perform_move() {
 }
 
 undo_last() {
+  # --- FIX 1: Safely exit if log doesn't exist (avoids grep error message) ---
+  if [[ ! -f "$LOGPATH" ]]; then
+    echo "Error: Log file not found at $LOGPATH. Please run organization first."
+    exit 1
+  fi
+  
   lines=$(grep " | MOVE | " "$LOGPATH" | tail -n "$1" | tac)
+  
   while IFS= read -r line; do
-    src=$(echo "$line" | awk -F ' -> ' '{print $1}' | awk '{print $4}')
-    dst=$(echo "$line" | awk -F ' -> ' '{print $2}' | awk '{print $1}')
-    mv "$dst" "$src"
-    echo "$(timestamp) | UNDO | $dst -> $src" >> "$LOGPATH"
-    echo "Undone: $dst -> $src"
+    # --- FIX 2: Correct parsing logic to reliably extract paths ---
+    # dst: Data after ' -> ' and before the ' | checksum:' field
+    dst=$(echo "$line" | awk -F ' -> ' '{print $2}' | awk -F ' | ' '{print $1}')
+    
+    # src: Data after ' | MOVE | ' and before ' -> '
+    src=$(echo "$line" | awk -F ' | MOVE | ' '{print $2}' | awk -F ' -> ' '{print $1}')
+
+    if [[ -f "$dst" ]]; then
+      mv "$dst" "$src"
+      echo "$(timestamp) | UNDO | $dst -> $src" >> "$LOGPATH"
+      echo "Undone: $dst -> $src"
+    else
+      echo "Warning: Destination file not found at $dst. Cannot undo this entry."
+    fi
   done <<< "$lines"
 }
 
@@ -65,7 +81,10 @@ if [[ "$UNDO_COUNT" != "0" ]]; then
 fi
 
 for f in "$TARGET_DIR"/*; do
-  [[ -f "$f" ]] && perform_move "$f"
+  # Skip directories and the log file itself
+  if [[ -f "$f" ]] && [[ "$(basename "$f")" != "$LOGFILE" ]]; then
+    perform_move "$f"
+  fi
 done
 
 echo "Organization complete."
