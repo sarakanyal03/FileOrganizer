@@ -98,6 +98,9 @@ Dryrun
 Actual Run
 ![Actual Run](https://github.com/sarakanyal03/FileOrganizer/blob/main/actualrun.png)
 
+
+### File Categories
+
 | File Type | Folder Name  | Extensions                          |
 | --------- | ------------ | ----------------------------------- |
 | Images    | `Images/`    | jpg, jpeg, png, gif                 |
