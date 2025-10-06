@@ -92,6 +92,6 @@ chmod +x organizer.sh
 ./organizer.sh --dir "./test_files" --undo 2
 ```
 ### Output
-![Dryrun]([https://github.com/sarakanyal03/FileOrganizer/blob/main/dryrun.png])
-![Actual Run]([https://github.com/sarakanyal03/FileOrganizer/blob/main/actualrun.png])
+![Dryrun](https://github.com/sarakanyal03/FileOrganizer/blob/main/dryrun.png)
+![Actual Run](https://github.com/sarakanyal03/FileOrganizer/blob/main/actualrun.png)
 
