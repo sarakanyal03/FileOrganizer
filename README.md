@@ -77,7 +77,7 @@ cd FileOrganizer
 chmod +x organizer.sh
 ```
 
-###Step 3: Run in Dry-Run Mode (Preview Changes)
+### Step 3: Run in Dry-Run Mode (Preview Changes)
 ```
 ./organizer.sh --dir "./test_files" --dryrun
 ```
@@ -91,5 +91,7 @@ chmod +x organizer.sh
 ```
 ./organizer.sh --dir "./test_files" --undo 2
 ```
-
+### Output
+![Dryrun]([https://github.com/sarakanyal03/FileOrganizer/blob/main/dryrun.png])
+![Actual Run]([https://github.com/sarakanyal03/FileOrganizer/blob/main/actualrun.png])
 
