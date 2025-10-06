@@ -110,3 +110,39 @@ Actual Run
 | Archives  | `Archives/`  | zip, rar, tar, gz, 7z               |
 | Code      | `Code/`      | py, c, cpp, java, js, html, css, sh |
 | Others    | `Others/`    | Uncategorized files                 |
+
+
+### Logging and Undo Mechanism
+
+All file movements are recorded in .organizer.log with:
+-Timestamp
+-Source and destination paths
+-File checksum (for verification)
+-Undo reads from this log and moves files back to their original locations.
+
+
+### Git Commands Used 
+| Command                   | Description                        |
+| ------------------------- | ---------------------------------- |
+| `git clone <URL>`         | Clone GitHub repository locally    |
+| `git add .`               | Stage modified or new files        |
+| `git commit -m "message"` | Save project snapshot              |
+| `git push origin main`    | Upload commits to GitHub           |
+| `git pull origin main`    | Get updates from remote repository |
+| `git status`              | Check current tracking status      |
+
+
+### Testing & Results
+
+-Tested the script with various file types.
+-Verified correct creation of categorized folders.
+-Confirmed .organizer.log entries for every movement.
+-Verified undo function restored files properly.
+-Confirmed dry-run mode works safely without moving files.
+
+
+### Conclusion
+
+The File Organizer and Cleaner successfully automates the process of sorting and managing files using a Bash script.
+It demonstrates efficient use of Linux commands, Git version control, and automation techniques for real-world file management.
+The project is lightweight, easy to use, and can be extended further with GUI or scheduling features.
