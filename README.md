@@ -100,6 +100,8 @@ chmod +x organizer.sh
 #### Actual Run 
 ![Actual Run](https://github.com/sarakanyal03/FileOrganizer/blob/main/actualrun.png)
 
+#### Logging and Und0
+![Logging](https://github.com/sarakanyal03/FileOrganizer/blob/main/logging%20and%20undo.png)
 
 ### File Categories
 
