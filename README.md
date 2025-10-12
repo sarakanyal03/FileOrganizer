@@ -65,6 +65,18 @@ FileOrganizer/
 ```
 ---
 
+### 🧪 Expected vs Actual Output
+
+| **Step** | **Expected Output** | **Actual Output** |
+|-----------|----------------------|--------------------|
+| **Before running** | All files mixed in one folder | ✅ Mixed test files in `test_files/` |
+| **After execution** | Files organized into subfolders | ✅ Created `Images/`, `Audio/`, `Documents/`, etc. |
+| **Log file creation** | `.organizer.log` generated | ✅ Log created with timestamps |
+| **Undo feature** | Files return to original positions | ✅ Undo executed successfully |
+
+
+---
+
 ## 💻 Usage Instructions
 
 ### Step 1: Clone the Repository
