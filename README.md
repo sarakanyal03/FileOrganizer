@@ -100,8 +100,6 @@ chmod +x organizer.sh
 #### Actual Run 
 ![Actual Run](https://github.com/sarakanyal03/FileOrganizer/blob/main/actualrun.png)
 
-#### Logging and Und0
-![Logging](https://github.com/sarakanyal03/FileOrganizer/blob/main/logging%20and%20undo.png)
 
 ### File Categories
 
@@ -123,6 +121,8 @@ All file movements are recorded in .organizer.log with:
 - Source and destination paths
 - File checksum (for verification)
 - Undo reads from this log and moves files back to their original locations.
+#### Logging and Und0
+![Logging](https://github.com/sarakanyal03/FileOrganizer/blob/main/logging%20and%20undo.png)
 
 
 ### Git Commands Used 
