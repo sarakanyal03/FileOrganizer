@@ -88,9 +88,10 @@ chmod +x organizer.sh
 ./organizer.sh --dir "./test_files"
 ```
 
-### Step 5: Undo Last Operation
+### Step 5: Undo Sorting
 ```
-./organizer.sh --dir "./test_files" --undo 2
+./organizer.sh --undo "./test_files"
+
 ```
 ### Output
 #### Dryrun
