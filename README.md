@@ -51,17 +51,18 @@ It helps keep your system clutter-free by automating the file management process
 
 ---
 ## Folder Structure
+```
 FileOrganizer/
-├── organizer.sh # Main Bash script
-├── README.md # Project documentation
-├── test_files/ # Folder with sample files
-│ ├── Audio/
-│ ├── Documents/
-│ ├── Images/
-│ ├── .organizer.log
-└── .git/ # Git tracking folder
-  
+├── organizer.sh        # Main Bash script
+├── README.md           # Project documentation
+├── test_files/         # Folder with sample files
+│   ├── Audio/
+│   ├── Documents/
+│   ├── Images/
+│   ├── .organizer.log
+└── .git/               # Git tracking folder
 
+```
 ---
 
 ## 💻 Usage Instructions
